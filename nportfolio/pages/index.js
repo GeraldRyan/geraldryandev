@@ -1,50 +1,50 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Gerald Ryan Portfolio</title>
+        <title>Gerald Ryan Portfolio</title>
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-        Hello World
-        </h1>
+        <h1 className={styles.title}>Hello World ✋</h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          <code className={styles.code}>View my Porfolio</code>
         </p>
-
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a
+            href="https://conways-game-of-life-lyart.vercel.app/"
+            className={styles.card}
+          >
+            <h3>Conway's Game of Life &rarr;</h3>
+            <img src="/assets/gameOfLife.png" alt="game of life grid" />
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://fitness-anywhere.now.sh/" className={styles.card}>
+            <h3>Fitness Anywhere &rarr;</h3>
+            <img src="/assets/fitany.png/" alt="weight lifter" />
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://main.dvxfvrn3mdjg1.amplifyapp.com/"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>Bridges To Prosperity &rarr;</h3>
+            <img src="/assets/btp.png/" alt="map of Rwanda" />
           </a>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <h3>American Football Scorecard &rarr;</h3>
+            <img
+              src="/assets/amfoot.png/"
+              alt="Interactive Football scoreboard graphic"
+            />
           </a>
         </div>
       </main>
@@ -55,10 +55,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }
