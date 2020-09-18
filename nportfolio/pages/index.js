@@ -8,13 +8,13 @@ export default function Home() {
       <Head>
         <title>Gerald Ryan Portfolio</title>
       </Head>
-      <PortfolioPieces></PortfolioPieces>
       <main className={styles.main}>
         <h1 className={styles.title}>Hello World ✋</h1>
 
         <p className={styles.description}>
           <code className={styles.code}>View my Porfolio</code>
         </p>
+      <PortfolioPieces></PortfolioPieces>
         <div className={styles.grid}>
           <a
             href="https://conways-game-of-life-lyart.vercel.app/"

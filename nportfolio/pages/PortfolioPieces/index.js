@@ -11,7 +11,7 @@ export default function PortfolioPieces() {
       <Button onClick={handleClick}>
         Open Modal
       </Button>
-        <Dialog open={openModal} onClose={closeModal}>And I'm a dialogue</Dialog>
+        <Dialog open={openModal} onClose={closeModal}>It is dangerous to go alone. Take this</Dialog>
     </div>
   );
 }

@@ -78,7 +78,8 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  max-width: 800px;
+  /* max-width: 800px; */
+  max-width: 60%;
   margin-top: 3rem;
 }
 
@@ -120,5 +121,7 @@
   .grid {
     width: 100%;
     flex-direction: column;
+    margin:auto;
+    text-align:center;
   }
 }
