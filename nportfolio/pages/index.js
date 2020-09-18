@@ -15,39 +15,7 @@ export default function Home() {
           <code className={styles.code}>View my Porfolio</code>
         </p>
       <PortfolioPieces></PortfolioPieces>
-        <div className={styles.grid}>
-          <a
-            href="https://conways-game-of-life-lyart.vercel.app/"
-            className={styles.card}
-          >
-            <h3>Conway's Game of Life &rarr;</h3>
-            <img src="/assets/gameOfLife.png" alt="game of life grid" />
-          </a>
 
-          <a href="https://fitness-anywhere.now.sh/" className={styles.card}>
-            <h3>Fitness Anywhere &rarr;</h3>
-            <img src="/assets/fitany.png/" alt="weight lifter" />
-          </a>
-
-          <a
-            href="https://main.dvxfvrn3mdjg1.amplifyapp.com/"
-            className={styles.card}
-          >
-            <h3>Bridges To Prosperity &rarr;</h3>
-            <img src="/assets/btp.png/" alt="map of Rwanda" />
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>American Football Scorecard &rarr;</h3>
-            <img
-              src="/assets/amfoot.png/"
-              alt="Interactive Football scoreboard graphic"
-            />
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>
