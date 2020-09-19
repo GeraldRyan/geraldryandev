@@ -2,19 +2,45 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import styles from "../../styles/Home.module.css";
+import { portfolioData } from "./portfolioData";
+import Dialogue from './Dialogue'
 
 export default function PortfolioPieces() {
   const [openModal, setOpenModal] = React.useState(false);
-  const handleClick = () => setOpenModal(true);
+  const handleClick = () => {
+    setOpenModal(true);
+    console.log("opening modal");
+  };
   const closeModal = () => setOpenModal(false);
   return (
     <div>
       <div className={styles.container}>
-        <Button onClick={handleClick}>Open Modal</Button>
+        {/* <Button onClick={handleClick}>Open Modal</Button>
         <Dialog open={openModal} onClose={closeModal}>
           It is dangerous to go alone. Take this
-        </Dialog>
+        </Dialog> */}
+
         <div className={styles.grid}>
+          {portfolioData.map((folio, index) => {
+            return (
+              <div key={index}>
+                <Button onClick={handleClick}>
+                  <img
+                    className={styles.card}
+                    src={folio.image}
+                    alt={folio.alt}
+                  />
+                </Button>
+
+                <Dialog open={openModal} onClose={closeModal}>
+                  <div>
+                    <h2>{folio.name}</h2>
+                    <p>{folio.description}</p>
+                  </div>
+                </Dialog>
+              </div>
+            );
+          })}
           <a
             href="https://conways-game-of-life-lyart.vercel.app/"
             className={styles.card}
