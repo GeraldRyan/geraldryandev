@@ -4,14 +4,10 @@ import Dialog from "@material-ui/core/Dialog";
 import styles from "../../styles/Home.module.css";
 import { portfolioData } from "./portfolioData";
 import Dialogue from './Dialogue'
+import PortfolioPiece from './PortfolioPiece'
 
-export default function PortfolioPieces() {
-  const [openModal, setOpenModal] = React.useState(false);
-  const handleClick = () => {
-    setOpenModal(true);
-    console.log("opening modal");
-  };
-  const closeModal = () => setOpenModal(false);
+export default function Portfolio() {
+
   return (
     <div>
       <div className={styles.container}>
@@ -23,22 +19,23 @@ export default function PortfolioPieces() {
         <div className={styles.grid}>
           {portfolioData.map((folio, index) => {
             return (
-              <div key={index}>
-                <Button onClick={handleClick}>
-                  <img
-                    className={styles.card}
-                    src={folio.image}
-                    alt={folio.alt}
-                  />
-                </Button>
+              <PortfolioPiece folio={folio} index={index}></PortfolioPiece>
+              // <div key={index}>
+              //   <Button onClick={handleClick}>
+              //     <img
+              //       className={styles.card}
+              //       src={folio.image}
+              //       alt={folio.alt}
+              //     />
+              //   </Button>
 
-                <Dialog open={openModal} onClose={closeModal}>
-                  <div>
-                    <h2>{folio.name}</h2>
-                    <p>{folio.description}</p>
-                  </div>
-                </Dialog>
-              </div>
+              //   <Dialog open={openModal} onClose={closeModal}>
+              //     <div>
+              //       <h2>{folio.name}</h2>
+              //       <p>{folio.description}</p>
+              //     </div>
+              //   </Dialog>
+              // </div>
             );
           })}
           <a

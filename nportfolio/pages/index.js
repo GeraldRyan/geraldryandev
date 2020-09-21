@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import PortfolioPieces from "./PortfolioPieces";
+import Portfolio from "./Portfolio";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <p className={styles.description}>
           <code className={styles.code}>View my Porfolio</code>
         </p>
-      <PortfolioPieces></PortfolioPieces>
+      <Portfolio></Portfolio>
 
       </main>
 
