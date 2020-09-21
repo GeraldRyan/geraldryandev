@@ -1,9 +1,6 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import Dialog from "@material-ui/core/Dialog";
 import styles from "../../styles/Home.module.css";
 import { portfolioData } from "./portfolioData";
-import Dialogue from './Dialogue'
 import PortfolioPiece from './PortfolioPiece'
 
 export default function Portfolio() {
@@ -38,7 +35,7 @@ export default function Portfolio() {
               // </div>
             );
           })}
-          <a
+          {/* <a
             href="https://conways-game-of-life-lyart.vercel.app/"
             className={styles.card}
           >
@@ -68,7 +65,7 @@ export default function Portfolio() {
               src="/assets/amfoot.png/"
               alt="Interactive Football scoreboard graphic"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
