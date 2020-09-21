@@ -20,6 +20,9 @@ export default function PortfolioPiece({ folio, index }) {
         <div>
           <h2>{folio.name}</h2>
           <p>{folio.description}</p>
+          <a href={folio.site}>
+            <button>Visit Website</button>
+          </a>
         </div>
       </Dialog>
     </div>
