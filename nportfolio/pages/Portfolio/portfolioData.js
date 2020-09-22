@@ -14,7 +14,7 @@ export const portfolioData = [
     ],
     tech_used: {
       frontend: "ReactJS | LESS | Redux | Mapbox",
-      backend: "NodeJS | Express | Jest | PostgreSQL | knex",
+      backend: "NodeJS | Express | Jest | PostgreSQL | Knex",
     },
     github:
       "https://github.com/Lambda-School-Labs/Labs25-Bridges_to_Prosperity-TeamA-be",
