@@ -64,10 +64,10 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
               .join("\n")} */}
             <h3 style={{color:"darkgreen"}}>Technologies used</h3>
             {Object.keys(folio.tech_used).map((key) => (
-              <div>
+              <>
                 <span style={{fontWeight:'bold'}}>{key[0].toUpperCase() + key.slice(1)}: </span>
                  {folio.tech_used[key]}
-              </div>
+              </>
             ))}
           </DialogContentText>
           <DialogActions>

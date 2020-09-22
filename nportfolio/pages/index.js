@@ -10,12 +10,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Hello World ✋</h1>
-
-        <p className={styles.description}>
-          <code className={styles.code}>View my Porfolio</code>
-        </p>
       <Portfolio></Portfolio>
-
       </main>
 
       <footer className={styles.footer}>

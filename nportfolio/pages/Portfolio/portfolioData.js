@@ -33,7 +33,7 @@ export const portfolioData = [
       },
     ],
     tech_used: {
-      frontend: "ReactJS ",
+      frontend: "ReactJS | React-Router",
     },
     github: "https://github.com/BW-AnywhereFitness/FE",
     site: "https://fitness-anywhere.now.sh/",
