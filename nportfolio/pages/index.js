@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Portfolio from "./Portfolio";
+import About from "./About";
+
 
 export default function Home() {
   return (
@@ -10,7 +12,18 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Hello World ✋</h1>
-      <Portfolio></Portfolio>
+        <div clasName="link-bar">
+        <a href={"https://github.com/GeraldRyan"}>
+          <code className={styles.code}>GitHub</code>
+        </a>
+        <a href="https://www.linkedin.com/in/gerald-ryan-0007/">
+          <code className={styles.code}>LinkedIn</code>
+        </a>
+      </div>
+      <About></About>
+      <Portfolio>
+
+      </Portfolio>
       </main>
 
       <footer className={styles.footer}>

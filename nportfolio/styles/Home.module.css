@@ -3,9 +3,12 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
+    .container .container{
+      margin-top: 3rem;
+    }
 
 .main {
   padding: 5rem 0;
@@ -40,21 +43,18 @@
   text-decoration: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.title a:hover, .title a:focus, .title a:active {
   text-decoration: underline;
 }
 
 .title {
-  margin: 0;
+  margin: 0 0 1rem 0;
   line-height: 1.15;
   font-size: 4rem;
-  color:green;
+  color: green;
 }
 
-.title,
-.description {
+.title, .description {
   text-align: center;
 }
 
@@ -68,8 +68,8 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  margin: 0 1rem;
 }
 
 .grid {
@@ -77,10 +77,9 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   /* max-width: 800px; */
   max-width: 60%;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .card {
@@ -95,9 +94,7 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.card:hover, .card:focus, .card:active {
   color: #0070f3;
   border-color: #0070f3;
 }
@@ -121,7 +118,15 @@
   .grid {
     width: 100%;
     flex-direction: column;
-    margin:auto;
-    text-align:center;
+    margin: auto;
+    text-align: center;
   }
 }
+
+/* My own CSS classes */
+.link-bar{
+  /* display:flex;
+  justify-content: space-between;
+border: 1px solid red; */
+}
+
