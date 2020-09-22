@@ -2,14 +2,18 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Portfolio from "./Portfolio";
 import About from "./About";
+import Navbar from "./Navbar";
+
 
 
 export default function Home() {
+  const [dark, setDark] = React.useState(false)
   return (
     <div className={styles.container}>
       <Head>
         <title>Gerald Ryan Portfolio</title>
       </Head>
+      <Navbar dark={dark} setDark={setDark}></Navbar>
       <main className={styles.main}>
         <h1 className={styles.title}>Hello World ✋</h1>
         <div clasName="link-bar">
