@@ -8,16 +8,16 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import styles from "../../styles/Home.module.css";
 
 export default function PortfolioPiece({ folio, index }) {
-  const [openModal, setOpenModal] = React.useState(false);
+  const [open, setopen] = React.useState(false);
   const [scroll, setScroll] = React.useState("paper");
   const handleClickOpen = (scrollType) => () => {
-    setOpenModal(true);
+    setopen(true);
     console.log("opening modal");
     setScroll(scrollType);
   };
-  const closeModal = () => setOpenModal(false);
+  const handleClose = () => setopen(false);
 
-// Material UI Boilerplate code
+  // Material UI Boilerplate code
   const descriptionElementRef = React.useRef(null);
   React.useEffect(() => {
     if (open) {
@@ -27,30 +27,71 @@ export default function PortfolioPiece({ folio, index }) {
       }
     }
   }, [open]);
-// End
+  // End
 
   return (
     <div key={index}>
       <Button onClick={handleClickOpen("paper")}>
         <img className={styles.card} src={folio.image} alt={folio.alt} />
       </Button>
-
-      <Dialog open={openModal} onClose={closeModal}>
-        <div>
-          <h2>{folio.name}</h2>
-          <img className={styles.card} src={folio.image} alt={folio.alt} />
-
-          <p>{folio.description}</p>
-          {[...new Array(50)].map(
-            () => 
-          <p>`Cras mattis consectetur purus sit amet fermentum.
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        scroll={scroll}
+        aria-labelledby="scroll-dialog-title"
+        aria-describedby="scroll-dialog-description"
+      >
+        <DialogTitle id="scroll-dialog-title" style={{ color: "red" }}>
+          {folio.name}
+        </DialogTitle>
+        <DialogContent dividers={scroll === "paper"}>
+          <DialogContentText
+            id="scroll-dialog-description"
+            ref={descriptionElementRef}
+            tabIndex={-1}
+          >
+            <img className={styles.card} src={folio.image} alt={folio.alt} />
+            <br />
+            <h3>Description</h3>
+            <>{folio.description}</>
+            {/* {[...new Array(50)]
+              .map(
+                () => `Cras mattis consectetur purus sit amet fermentum.
 Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`</p>
-          )}
-          <a href={folio.site}>
-            <button>Visit Website</button>
-          </a>
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
+              )
+              .join("\n")} */}
+            <h3>Technologies used</h3>
+            {Object.keys(folio.tech_used).map((key) => (
+              <div>
+                <span style={{fontWeight:'bold'}}>{key[0].toUpperCase() + key.slice(1)}: </span>
+                 {folio.tech_used[key]}
+              </div>
+            ))}
+          </DialogContentText>
+          <DialogActions>
+            <a href={folio.github}>
+              <Button onClick={handleClose} color="primary">
+                Github
+              </Button>
+            </a>
+            <a href={folio.site}>
+              <Button onClick={handleClose} color="primary">
+                Website
+              </Button>
+            </a>
+          </DialogActions>
+        </DialogContent>
+        <div>
+          {/* {[...new Array(50)].map(() => (
+            <p>
+              `Cras mattis consectetur purus sit amet fermentum. Cras justo
+              odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus,
+              porta ac consectetur ac, vestibulum at eros. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et.`
+            </p>
+          ))} */}
         </div>
       </Dialog>
     </div>

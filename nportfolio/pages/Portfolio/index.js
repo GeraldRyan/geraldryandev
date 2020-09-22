@@ -16,7 +16,7 @@ export default function Portfolio() {
         <div className={styles.grid}>
           {portfolioData.map((folio, index) => {
             return (
-              <PortfolioPiece folio={folio} index={index}></PortfolioPiece>
+              <PortfolioPiece folio={folio} key={index} index={index}></PortfolioPiece>
               // <div key={index}>
               //   <Button onClick={handleClick}>
               //     <img
