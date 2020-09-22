@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Portfolio from "./Portfolio";
-import About from "./About";
+import About from "./about-me";
 import Navbar from "./Navbar";
 
 export default function Home() {
