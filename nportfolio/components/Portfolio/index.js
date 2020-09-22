@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
-import { portfolioData } from "./portfolioData";
+import {portfolioData} from "./portfolioData";
 import PortfolioPiece from "./PortfolioPiece";
 
 export default function Portfolio({dark}) {
@@ -25,3 +25,5 @@ export default function Portfolio({dark}) {
     </div>
   );
 }
+
+
