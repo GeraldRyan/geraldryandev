@@ -67,6 +67,7 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
               <>
                 <span style={{fontWeight:'bold'}}>{key[0].toUpperCase() + key.slice(1)}: </span>
                  {folio.tech_used[key]}
+                 <br/>
               </>
             ))}
           </DialogContentText>

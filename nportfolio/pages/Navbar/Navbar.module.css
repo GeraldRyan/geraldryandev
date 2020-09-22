@@ -1,10 +1,10 @@
 .navbar{
   text-align:right;
-  position:absolute;
-  display:flex;
-  justify-content: flex-end;
+  /* position:fixed; */
+  /* display:flex; */
+  /* justify-content: flex-end;  */
   float:right;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   }
 .darkmode{
 display:flex;

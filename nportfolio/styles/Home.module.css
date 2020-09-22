@@ -71,7 +71,15 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   margin: 0 1rem;
 }
-
+.codeDark {
+  background: #fafafa;
+  color:black;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  margin: 0 1rem;
+}
 .grid {
   display: flex;
   align-items: center;
@@ -123,6 +131,11 @@
   }
 }
 
+.darkMode{
+  background-color: black;
+  color:white;
+  font-size: 1.4rem;
+}
 /* My own CSS classes */
 .link-bar{
   /* display:flex;
