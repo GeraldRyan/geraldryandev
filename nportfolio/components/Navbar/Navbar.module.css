@@ -1,0 +1,13 @@
+.navbar{
+  text-align:right;
+  /* position:fixed; */
+  /* display:flex; */
+  /* justify-content: flex-end;  */
+  float:right;
+  /* border: 1px solid red; */
+  }
+.darkmode{
+display:flex;
+align-items: stretch;
+text-align:right;
+}
