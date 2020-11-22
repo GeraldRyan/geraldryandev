@@ -72,6 +72,6 @@ export const portfolioData = [
     },
     github:
       "https://github.com/GeraldRyan/react-american-football-scoreboard",
-    site: https:"//react-american-football-scoreboard-blond.now.sh/",
+    site: "https://react-american-football-scoreboard-blond.now.sh/",
   },
 ];
