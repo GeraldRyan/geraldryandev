@@ -72,6 +72,6 @@ export const portfolioData = [
     },
     github:
       "https://github.com/GeraldRyan/react-american-football-scoreboard",
-    site: "https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+    site: https:"//react-american-football-scoreboard-blond.now.sh/",
   },
 ];
