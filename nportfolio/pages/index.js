@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 export default function Home() {
   const [dark, setDark] = React.useState(false);
   return (
-    <div className="doesNothing">
+    <>
       <div className={dark ? styles.darkMode : ""}>
         <Navbar dark={dark} setDark={setDark}></Navbar>
         <div className={styles.container}>
@@ -44,6 +44,6 @@ export default function Home() {
               />
             </a>
           </footer>
-    </div>
+    </>
   );
 }

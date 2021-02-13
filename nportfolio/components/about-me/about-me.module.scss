@@ -1,16 +1,20 @@
+
 .fullWidth {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.aboutContainer {
-  /* color: red; */
-  margin-top: 3rem;
-  width: 60%;
+  .aboutContainer {
+    /* color: red; */
+    margin-top: 3rem;
+    width: 60%;
+  }
 }
 #about{
   color:rgb(180, 170, 21);
+}
+.boldword{
+  color:red;
 }
 
 .aboutContainer h3 {
