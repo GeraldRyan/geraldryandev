@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/home.module.css";
+import styles from "../styles/home.module.css"
 import Portfolio from "../components/Portfolio";
 import About from "../components/about-me";
 import Navbar from "../components/Navbar";
@@ -14,7 +14,7 @@ export default function Home()
       </Head>
       <div className={dark ? styles.darkMode : ""}>
         <div className={styles.container}>
-        <Navbar dark={dark} setDark={setDark}></Navbar>
+          <Navbar dark={dark} setDark={setDark}></Navbar>
           <main className={styles.main}>
             <h1 className={styles.title}>Hello World ✋🤝</h1>
             <div clasName="link-bar">
