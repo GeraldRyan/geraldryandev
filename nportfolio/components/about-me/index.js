@@ -3,24 +3,23 @@ import styles from "../../styles/Home.module.css";
 import mod from "./about-me.module.scss";
 
 
-export default () => {
+export default () =>
+{
   return (
-    <div className={mod.fullWidth}>
-      <div className={mod.aboutContainer}>
-        <div className={mod.flexContent}>
-          <h3 className={mod.boldword}>About:</h3>
-          <p>
+    <div className={mod.wideContainer}>
+      <div className={mod.narrowContainer}>
+        <div className={mod.layer}>
+          <h3 className={mod.boldwords}>About:</h3>
+          <p className={mod.pContent}>
             I'm a full stack developer with a background in
             accounting and finance. I have been coding since 2017.
           </p>
         </div>
-        <div className={mod.flexContent}>
-          <h3 className={mod.boldword}>Skills: </h3>
-          <div className="languages shared-width">
-            <p>
-              Python | TypeScript | C | SQL | React | git |
+        <div className={mod.layer}>
+          <h3 className={mod.boldwords}>Skills: </h3>
+            <p className={mod.pContent}>
+              Python | TypeScript | Javascript | C | Java | React | SQL | git
             </p>
-          </div>
         </div>
       </div>
     </div>
