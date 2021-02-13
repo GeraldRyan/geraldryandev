@@ -7,6 +7,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import styles from "../../styles/Home.module.css";
 
+
 export default function PortfolioPiece({ folio, index }) {
   const [open, setopen] = React.useState(false);
   const [scroll, setScroll] = React.useState("paper");
