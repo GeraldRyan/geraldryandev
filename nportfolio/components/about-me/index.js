@@ -10,8 +10,7 @@ export default function About() {
           <h3>About:</h3>
           <p>
             I'm a full stack developer with a background in finance and
-            accounting. I have been coding since 2017. I love all things
-            engineering and musical.
+            accounting. I have been coding since 2017.
           </p>
         </div>
         <div className={modstyles.flexContent}>
