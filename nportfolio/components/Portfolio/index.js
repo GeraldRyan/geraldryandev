@@ -7,7 +7,7 @@ export default function Portfolio({dark}) {
   return (
     <div className="link-bar">
       <div className={styles.container}>
-      <code className={dark ? styles.codeDark: styles.code}>View my Porfolio</code>
+      <code className={dark ? styles.codeDark: styles.code}>Misc Projects</code>
         <div className={styles.grid}>
           {portfolioData.map((folio, index) => {
             return (

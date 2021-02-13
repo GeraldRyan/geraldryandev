@@ -18,7 +18,7 @@ export default () =>
         <div className={mod.layer}>
           <h3 className={mod.boldwords}>Skills: </h3>
             <p className={mod.pContent}>
-              Python | TypeScript | Javascript | C | Java | React | SQL | git
+              Python | TypeScript | C | React | SQL | git
             </p>
         </div>
       </div>
