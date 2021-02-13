@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
-import mod from "./about-me.module.css";
+import mod from "./about-me.module.scss";
 
 
 export default () => {
@@ -10,8 +10,8 @@ export default () => {
         <div className={mod.flexContent}>
           <h3 id={mod.about}>About:</h3>
           <p>
-            I'm a full stack developer with a background in finance and
-            accounting. I have been coding since 2017.
+            I'm a full stack developer with a background in
+            accounting and finance. I have been coding since 2017.
           </p>
         </div>
         <div className={mod.flexContent}>
