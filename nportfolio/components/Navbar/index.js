@@ -2,8 +2,7 @@ import React from "react";
 import Switch from "@material-ui/core/Switch";
 import { FiSun } from "react-icons/fi";
 import { FiMoon } from "react-icons/fi";
-import styles from "../../styles/Home.module.css";
-import navstyles from './Navbar.module.css'
+import nav from './navbar.module.scss'
 
 const Navbar = ({ dark, setDark }) => {
   function handleSwitch() {
@@ -11,8 +10,8 @@ const Navbar = ({ dark, setDark }) => {
     setDark(!dark)
   }
   return (
-    <div className={navstyles.navbar} id="top">
-      <div className={navstyles.darkmode}>
+    <div className={nav.navbar} id={nav.navbarElement}>
+      <div className={nav.darkmode}>
         <div className="day-icon">
           <FiSun />
         </div>

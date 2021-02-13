@@ -6,9 +6,10 @@
   justify-content: start;
   align-items: center;
 }
-    .container .container{
-      margin-top: 3rem;
-    }
+
+.container .container {
+  margin-top: 3rem;
+}
 
 .main {
   padding: 5rem 0;
@@ -71,15 +72,17 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   margin: 0 1rem;
 }
+
 .codeDark {
   background: #fafafa;
-  color:black;
+  color: black;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   margin: 0 1rem;
 }
+
 .grid {
   display: flex;
   align-items: center;
@@ -131,15 +134,16 @@
   }
 }
 
-.darkMode{
+.darkMode {
   background-color: black;
-  color:white;
+  color: white;
   font-size: 1.4rem;
 }
+
 /* My own CSS classes */
-.link-bar{
+
+.link-bar {
   /* display:flex;
   justify-content: space-between;
 border: 1px solid red; */
 }
-
