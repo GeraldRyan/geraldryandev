@@ -5,7 +5,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/home.module.css";
 
 
 export default function PortfolioPiece({ folio, index }) {
