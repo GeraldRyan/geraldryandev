@@ -12,7 +12,7 @@ export default function Home() {
         <Navbar dark={dark} setDark={setDark}></Navbar>
         <div className={styles.container}>
           <Head>
-            <title>Gerald Ryan Portfolio</title>
+            <title>The Next Portfolio Page</title>
           </Head>
           <main className={styles.main}>
             <h1 className={styles.title}>Hello World ✋🤝</h1>
