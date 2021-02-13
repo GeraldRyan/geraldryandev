@@ -1,0 +1,30 @@
+.wideContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .narrowContainer {
+    /* color: red; */
+    margin: 100px 0;
+    width: 50%;
+    .layer {
+      display: flex;
+      .boldwords {
+        color: red;
+        width:10%;
+      }
+      p{
+        width: 90%;
+      }
+    }
+  }
+}
+
+.aboutContainer h3 {
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+/* ul {
+  list-style-type: none;
+} */

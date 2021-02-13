@@ -1,0 +1,38 @@
+import Head from "next/head";
+import styles from "../styles/home.module.css"
+import Portfolio from "../components/Portfolio";
+import About from "../components/about-me";
+import Navbar from "../components/Navbar";
+
+export default function Home()
+{
+  const [dark, setDark] = React.useState(false);
+  return (
+    <>
+      <Head>
+        <title>The Next Portfolio Page</title>
+      </Head>
+      <div className={dark ? styles.darkMode : ""}>
+        <div className={styles.container}>
+          <Navbar dark={dark} setDark={setDark}></Navbar>
+          <main className={styles.main}>
+            <h1 className={styles.title}>Hello World ✋🤝</h1>
+            <div className="link-bar">
+              <a href={"https://github.com/GeraldRyan"}>
+                <code className={dark ? styles.codeDark : styles.code}>GitHub</code>
+              </a>
+              <a href="https://www.linkedin.com/in/gerald-ryan-0007/">
+                <code className={dark ? styles.codeDark : styles.code}>LinkedIn</code>
+              </a>
+            </div>
+            <About dark={dark}></About>
+            <Portfolio dark={dark}></Portfolio>
+          </main>
+
+        </div>
+      </div>
+      <footer className={styles.footer}>
+      </footer>
+    </>
+  );
+}
