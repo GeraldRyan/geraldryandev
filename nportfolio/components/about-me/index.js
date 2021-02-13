@@ -17,9 +17,7 @@ export default function About() {
           <h3>Skills: </h3>
           <div className="languages shared-width">
             <p>
-              Python | Javascript | HTML | CSS/Sass/Less |
-              SQL | PostgreSQL | Node | Next | React | Redux |
-              knex | axios | git | postman | Excel & VBA | C++
+              Python | TypeScript | C | SQL | React | git |
             </p>
           </div>
         </div>
